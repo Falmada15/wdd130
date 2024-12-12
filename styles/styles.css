@@ -1,34 +1,53 @@
+/* Root Variables */
+:root {
+  --color-darkblue: darkblue;
+  --color-white: white;
+  --color-lightgray: #f4f4f4;
+  --color-darkgray: #333;
+  --color-gray: gray;
+  --color-black: black;
+
+  --padding-small: 10px;
+  --padding-medium: 20px;
+  --padding-large: 1rem;
+
+  --width-main-img: 150px;
+  --width-aside-img: 200px;
+
+  --max-width-main: 840px;
+}
+
 /* Navigation */
 nav {
-  background-color: darkblue;
-  padding: 10px;
+  background-color: var(--color-darkblue);
+  padding: var(--padding-small);
 }
 
 nav a {
-  color: white;
+  color: var(--color-white);
   display: block;
-  padding: 20px;
+  padding: var(--padding-medium);
 }
 
 /* Header */
 h1 {
-  color: darkblue;
+  color: var(--color-darkblue);
 }
 
 /* Images */
 main img {
-  width: 150px;
+  width: var(--width-main-img);
   height: auto;
-  border: 1px solid black;
+  border: 1px solid var(--color-black);
   padding: 2px;
-  box-shadow: 0 0 30px gray;
+  box-shadow: 0 0 30px var(--color-gray);
 }
 
 aside img {
-  width: 200px;
+  width: var(--width-aside-img);
   height: auto;
   display: block;
-  margin: 0 auto 1rem;
+  margin: 0 auto var(--padding-large);
 }
 
 /* Paragraphs */
@@ -39,24 +58,24 @@ p {
 /* Aside section */
 aside {
   width: 20rem;
-  margin: 1rem auto;
+  margin: var(--padding-large) auto;
   border: 1px solid rgba(0, 0, 0, 0.2);
-  padding: 1rem;
-  background-color: #f4f4f4;
-  color: #333;
+  padding: var(--padding-large);
+  background-color: var(--color-lightgray);
+  color: var(--color-darkgray);
   text-align: center;
 }
 
 /* Footer */
 footer {
   margin-top: 15px;
-  border-top: 1px solid #000;
+  border-top: 1px solid var(--color-black);
   text-align: center;
-  padding: 1rem 0;
+  padding: var(--padding-large) 0;
 }
 
 /* Main */
 main {
-  max-width: 840px;
+  max-width: var(--max-width-main);
   margin: 0 auto;
 }
