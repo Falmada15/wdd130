@@ -1,27 +1,42 @@
+/* Global CSS Variables */
+:root {
+  --primary-color: darkblue;
+  --secondary-color: white;
+  --border-color: black;
+  --shadow-color: gray;
+  --background-light: #f4f4f4;
+  --text-dark: #333;
+  --padding-small: 2px;
+  --padding-medium: 10px;
+  --padding-large: 20px;
+  --aside-width: 20rem;
+  --max-width: 840px;
+}
+
 /* Navigation */
 nav {
-  background-color: darkblue;
-  padding: 10px;
+  background-color: var(--primary-color);
+  padding: var(--padding-medium);
 }
 
 nav a {
-  color: white;
+  color: var(--secondary-color);
   display: block;
-  padding: 20px;
+  padding: var(--padding-large);
 }
 
 /* Header */
 h1 {
-  color: darkblue;
+  color: var(--primary-color);
 }
 
 /* Images */
 main img {
   width: 150px;
   height: auto;
-  border: 1px solid black;
-  padding: 2px;
-  box-shadow: 0 0 30px gray;
+  border: 1px solid var(--border-color);
+  padding: var(--padding-small);
+  box-shadow: 0 0 30px var(--shadow-color);
 }
 
 aside img {
@@ -38,25 +53,25 @@ p {
 
 /* Aside section */
 aside {
-  width: 20rem;
+  width: var(--aside-width);
   margin: 1rem auto;
   border: 1px solid rgba(0, 0, 0, 0.2);
   padding: 1rem;
-  background-color: #f4f4f4;
-  color: #333;
+  background-color: var(--background-light);
+  color: var(--text-dark);
   text-align: center;
 }
 
 /* Footer */
 footer {
   margin-top: 15px;
-  border-top: 1px solid #000;
+  border-top: 1px solid var(--border-color);
   text-align: center;
   padding: 1rem 0;
 }
 
 /* Main */
 main {
-  max-width: 840px;
+  max-width: var(--max-width);
   margin: 0 auto;
 }

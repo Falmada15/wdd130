@@ -1,0 +1,50 @@
+/* General styles */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+/* Styles for the main container */
+.callout {
+    max-width: 600px; /* Limit max width */
+    margin: 20px auto; /* Center container */
+    border: 2px solid #ccc; /* Light gray border */
+    padding: 20px; /* Internal spacing */
+    background-color: #fefefe; /* White background */
+    color: #333; /* Text color */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+/* Styles for the image */
+.callout img {
+    float: left; /* Float image to the left */
+    margin-right: 15px; /* Spacing to the right of the image */
+    border: 2px solid #ccc; /* Light gray border */
+    padding: 5px; /* Internal spacing inside the border */
+    background-color: #f9f9f9; /* Background for the border */
+    border-radius: 50%; /* Make the image circular */
+}
+
+/* Styles for the blockquote */
+blockquote {
+    margin: 10px 0; /* Top and bottom spacing */
+    font-style: italic; /* Italicize text */
+    color: #555; /* Dark gray color */
+    border-left: 5px solid #ccc; /* Decorative left border */
+    padding-left: 15px; /* Internal left spacing */
+}
+
+/* Styles for the citation */
+cite {
+    display: block; /* Display as block */
+    border-top: 1px solid #ccc; /* Top decorative line */
+    padding-top: 10px; /* Internal top spacing */
+    text-align: right; /* Align text to the right */
+    font-size: 0.9em; /* Smaller font size */
+    color: #777; /* Light gray color */
+}
