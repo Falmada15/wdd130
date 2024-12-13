@@ -58,7 +58,7 @@ main img {
   border: 2px solid var(--color-darkblue);
   padding: 5px;
   box-shadow: 0 0 15px var(--color-gray);
-  float: right; /* Float profile image */
+  float: right;
   margin: var(--padding-medium);
 }
 
