@@ -1,0 +1,33 @@
+.callout {
+    max-width: 500px;
+    margin: 1rem auto;
+    border: 2px solid rgba(0, 0, 0, 0.1);
+    padding: 1rem;
+    background-color: #faebd7;
+    /* antiquewhite */
+    color: #333;
+    overflow: auto;
+}
+
+.callout img {
+    float: left;
+    margin: 0 1rem 1rem 0;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    padding: 0.25rem;
+    background-color: white;
+    width: 150px;
+    height: auto;
+}
+
+blockquote {
+    margin: 0;
+}
+
+cite {
+    display: block;
+    border-top: 1px solid #ccc;
+    padding-top: 0.5rem;
+    text-align: right;
+    font-size: 0.875rem;
+    color: #666;
+}

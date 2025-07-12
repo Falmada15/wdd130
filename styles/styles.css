@@ -1,0 +1,39 @@
+/* Navegación */
+nav {
+    background-color: #0e421c;
+    /* Verde oscuro */
+    padding: 1rem;
+}
+
+/* Enlaces de navegación */
+nav a {
+    color: antiquewhite;
+    display: block;
+    padding: 1rem;
+    text-decoration: none;
+}
+
+/* Título principal */
+h1 {
+    color: #0e421c;
+    font-size: 2rem;
+    text-align: center;
+}
+
+/* Imagen de perfil */
+img {
+    width: 150px;
+    height: auto;
+    border: 1px solid #000;
+    padding: 0.5rem;
+    box-shadow: 0 0 1.875rem gray;
+    /* 30px en rem */
+    display: block;
+    margin: 0 auto;
+}
+
+/* Párrafos */
+p {
+    padding: 1rem;
+    line-height: 1.6;
+}
