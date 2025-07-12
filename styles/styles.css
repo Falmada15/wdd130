@@ -1,39 +1,151 @@
-/* Navegación */
+/* Root Variables */
+:root {
+    --color-darkblue: darkblue;
+    --color-white: white;
+    --color-lightgray: #f4f4f4;
+    --color-darkgray: #333;
+    --color-gray: gray;
+    --color-black: #000;
+
+    --padding-small: 10px;
+    --padding-medium: 20px;
+    --padding-large: 1rem;
+
+    --width-main-img: 150px;
+    --width-aside-img: 200px;
+
+    --max-width-main: 840px;
+}
+
+/* Reset and Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Navigation Bar */
 nav {
-    background-color: #0e421c;
-    /* Verde oscuro */
-    padding: 1rem;
+    background-color: var(--color-darkblue);
+    padding: var(--padding-small);
+    display: flex;
+    justify-content: center;
+    gap: var(--padding-small);
 }
 
-/* Enlaces de navegación */
 nav a {
-    color: antiquewhite;
-    display: block;
-    padding: 1rem;
+    color: var(--color-white);
     text-decoration: none;
+    padding: var(--padding-small) var(--padding-medium);
+    border-radius: 5px;
+    transition: background-color 0.3s ease, color 0.3s ease;
 }
 
-/* Título principal */
+nav a:hover {
+    background-color: var(--color-white);
+    color: var(--color-darkblue);
+}
+
+/* Heading */
 h1 {
-    color: #0e421c;
-    font-size: 2rem;
+    color: var(--color-darkblue);
     text-align: center;
+    margin: var(--padding-large) 0;
 }
 
-/* Imagen de perfil */
-img {
-    width: 150px;
+/* Main Image */
+main>img {
+    width: var(--width-main-img);
     height: auto;
-    border: 1px solid #000;
-    padding: 0.5rem;
-    box-shadow: 0 0 1.875rem gray;
-    /* 30px en rem */
-    display: block;
-    margin: 0 auto;
+    border: 2px solid var(--color-darkblue);
+    padding: 5px;
+    box-shadow: 0 0 10px rgba(128, 128, 128, 0.4);
+    float: right;
+    margin: var(--padding-medium);
+    border-radius: 4px;
 }
 
-/* Párrafos */
+/* Aside Image */
+aside img {
+    width: var(--width-aside-img);
+    height: auto;
+    display: block;
+    margin: 0 auto var(--padding-large);
+    border-radius: 10px;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.15);
+}
+
+/* Paragraphs */
 p {
-    padding: 1rem;
     line-height: 1.6;
+    margin-bottom: var(--padding-medium);
+}
+
+/* Aside Section */
+aside {
+    width: 20rem;
+    margin: var(--padding-large) auto;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    padding: var(--padding-large);
+    background-color: var(--color-lightgray);
+    color: var(--color-darkgray);
+    text-align: center;
+    position: relative;
+}
+
+aside h2 {
+    position: absolute;
+    top: 16px;
+    left: 16px;
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 6px 10px;
+    border-radius: 4px;
+    font-size: 1.1rem;
+    color: var(--color-black);
+}
+
+/* Footer */
+footer {
+    margin-top: var(--padding-large);
+    border-top: 1px solid var(--color-black);
+    text-align: center;
+    padding: var(--padding-large) 0;
+    background-color: #e0e0e0;
+    font-size: 0.9rem;
+    color: var(--color-darkgray);
+}
+
+/* Main Section */
+main {
+    max-width: var(--max-width-main);
+    margin: 0 auto;
+    padding: var(--padding-medium);
+}
+
+/* Box Utility Class */
+.box {
+    margin: 1rem;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    padding: 1rem;
+    background-color: var(--color-lightgray);
+    color: var(--color-darkgray);
+}
+
+/* Responsive Adjustments */
+@media (max-width: 600px) {
+    nav {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    main>img {
+        float: none;
+        display: block;
+        margin: 0 auto var(--padding-medium);
+    }
+
+    aside {
+        width: auto;
+        margin: var(--padding-medium);
+    }
 }
