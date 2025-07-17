@@ -4,27 +4,27 @@
     --color-white: white;
     --color-lightgray: #f4f4f4;
     --color-darkgray: #333;
+    --color-gray: gray;
     --color-black: #000;
+
     --padding-small: 10px;
     --padding-medium: 20px;
     --padding-large: 1rem;
+
     --width-main-img: 150px;
     --width-aside-img: 200px;
+
     --max-width-main: 840px;
 }
 
-/* ======================
-   Reset and Base Styles
-   ====================== */
+/* Reset and Base Styles */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/* ==============
-   Navigation Bar
-   ============== */
+/* Navigation Bar */
 nav {
     background-color: var(--color-darkblue);
     padding: var(--padding-small);
@@ -46,18 +46,14 @@ nav a:hover {
     color: var(--color-darkblue);
 }
 
-/* ==================
-   Heading and Intro
-   ================== */
+/* Heading */
 h1 {
     color: var(--color-darkblue);
     text-align: center;
     margin: var(--padding-large) 0;
 }
 
-/* =====================
-   Main Image - Floated
-   ===================== */
+/* Main Image */
 main>img {
     width: var(--width-main-img);
     height: auto;
@@ -69,17 +65,23 @@ main>img {
     border-radius: 4px;
 }
 
-/* ====================
-   Paragraph Styling
-   ==================== */
+/* Aside Image */
+aside img {
+    width: var(--width-aside-img);
+    height: auto;
+    display: block;
+    margin: 0 auto var(--padding-large);
+    border-radius: 10px;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.15);
+}
+
+/* Paragraphs */
 p {
     line-height: 1.6;
     margin-bottom: var(--padding-medium);
 }
 
-/* =============
-   Aside Section
-   ============= */
+/* Aside Section */
 aside {
     width: 20rem;
     margin: var(--padding-large) auto;
@@ -91,9 +93,6 @@ aside {
     position: relative;
 }
 
-/* ==================================
-   Overlay Heading inside Aside (ABS)
-   ================================== */
 aside h2 {
     position: absolute;
     top: 16px;
@@ -105,40 +104,7 @@ aside h2 {
     color: var(--color-black);
 }
 
-/* =====================================
-   Aside Image Styling (Type Selector)
-   ===================================== */
-aside img {
-    width: var(--width-aside-img);
-    height: auto;
-    display: block;
-    margin: 0 auto var(--padding-large);
-    border-radius: 10px;
-    box-shadow: 0 0 8px rgba(0, 0, 0, 0.15);
-}
-
-/* =====================
-   Favorite Temples List
-   ===================== */
-#temple-list li {
-    margin-bottom: 0.5rem;
-}
-
-/* ===================
-   Box Utility Class
-   =================== */
-/* Class Selectors */
-.box {
-    margin: 1rem;
-    border: 1px solid rgba(0, 0, 0, 0.1);
-    padding: 1rem;
-    background-color: var(--color-lightgray);
-    color: var(--color-darkgray);
-}
-
-/* ============
-   Footer Style
-   ============ */
+/* Footer */
 footer {
     margin-top: var(--padding-large);
     border-top: 1px solid var(--color-black);
@@ -149,18 +115,23 @@ footer {
     color: var(--color-darkgray);
 }
 
-/* ==================
-   Main Section Layout
-   ================== */
+/* Main Section */
 main {
     max-width: var(--max-width-main);
     margin: 0 auto;
     padding: var(--padding-medium);
 }
 
-/* =======================
-   Responsive Adjustments
-   ======================= */
+/* Box Utility Class */
+.box {
+    margin: 1rem;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    padding: 1rem;
+    background-color: var(--color-lightgray);
+    color: var(--color-darkgray);
+}
+
+/* Responsive Adjustments */
 @media (max-width: 600px) {
     nav {
         flex-direction: column;
