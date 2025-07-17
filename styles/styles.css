@@ -6,15 +6,23 @@
     --color-darkgray: #333;
     --color-gray: gray;
     --color-black: #000;
+    --color-footer-bg: #e0e0e0;
 
+    --padding-xs: 5px;
     --padding-small: 10px;
     --padding-medium: 20px;
     --padding-large: 1rem;
+
+    --border-radius-small: 4px;
+    --border-radius-medium: 10px;
 
     --width-main-img: 150px;
     --width-aside-img: 200px;
 
     --max-width-main: 840px;
+
+    --box-shadow-light: 0 0 10px rgba(128, 128, 128, 0.4);
+    --box-shadow-dark: 0 0 8px rgba(0, 0, 0, 0.15);
 }
 
 /* Reset and Base Styles */
@@ -37,7 +45,7 @@ nav a {
     color: var(--color-white);
     text-decoration: none;
     padding: var(--padding-small) var(--padding-medium);
-    border-radius: 5px;
+    border-radius: var(--border-radius-small);
     transition: background-color 0.3s ease, color 0.3s ease;
 }
 
@@ -58,21 +66,11 @@ main>img {
     width: var(--width-main-img);
     height: auto;
     border: 2px solid var(--color-darkblue);
-    padding: 5px;
-    box-shadow: 0 0 10px rgba(128, 128, 128, 0.4);
+    padding: var(--padding-xs);
+    box-shadow: var(--box-shadow-light);
     float: right;
     margin: var(--padding-medium);
-    border-radius: 4px;
-}
-
-/* Aside Image */
-aside img {
-    width: var(--width-aside-img);
-    height: auto;
-    display: block;
-    margin: 0 auto var(--padding-large);
-    border-radius: 10px;
-    box-shadow: 0 0 8px rgba(0, 0, 0, 0.15);
+    border-radius: var(--border-radius-small);
 }
 
 /* Paragraphs */
@@ -99,9 +97,19 @@ aside h2 {
     left: 16px;
     background-color: rgba(255, 255, 255, 0.9);
     padding: 6px 10px;
-    border-radius: 4px;
+    border-radius: var(--border-radius-small);
     font-size: 1.1rem;
     color: var(--color-black);
+}
+
+/* Aside Image */
+aside img {
+    width: var(--width-aside-img);
+    height: auto;
+    display: block;
+    margin: 0 auto var(--padding-large);
+    border-radius: var(--border-radius-medium);
+    box-shadow: var(--box-shadow-dark);
 }
 
 /* Footer */
@@ -110,7 +118,7 @@ footer {
     border-top: 1px solid var(--color-black);
     text-align: center;
     padding: var(--padding-large) 0;
-    background-color: #e0e0e0;
+    background-color: var(--color-footer-bg);
     font-size: 0.9rem;
     color: var(--color-darkgray);
 }
@@ -124,9 +132,9 @@ main {
 
 /* Box Utility Class */
 .box {
-    margin: 1rem;
+    margin: var(--padding-large);
     border: 1px solid rgba(0, 0, 0, 0.1);
-    padding: 1rem;
+    padding: var(--padding-large);
     background-color: var(--color-lightgray);
     color: var(--color-darkgray);
 }
