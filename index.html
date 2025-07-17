@@ -15,7 +15,7 @@
   <!-- Header with navigation links -->
   <header>
     <nav>
-      <a href="index.html">Home</a>
+      <a href="#" id="home-link">Home</a>
       <a href="wwr/">Rafting Website</a>
       <a href="https://www.linkedin.com/in/franco-almada-bb7022248" target="_blank">LinkedIn</a>
       <a href="https://www.facebook.com/franco.almada.92560" target="_blank">Facebook</a>
@@ -61,7 +61,13 @@
     <p>&copy; 2025 | Franco Taiel Almada | Santa Fe, Argentina</p>
   </footer>
 
-  <!-- Last Modified: 2025-07-16 -->
+  <!-- JavaScript to handle navigation link clicks -->
+  <script>
+    document.getElementById('home-link').addEventListener('click', function (event) {
+      event.preventDefault();
+      window.location.href = 'index.html';
+    });
+  </script>
 </body>
 
 </html>
