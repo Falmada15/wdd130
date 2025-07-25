@@ -1,4 +1,3 @@
-/* Root Variables */
 :root {
     --color-darkblue: darkblue;
     --color-white: white;
@@ -25,11 +24,19 @@
     --box-shadow-dark: 0 0 8px rgba(0, 0, 0, 0.15);
 }
 
-/* Reset and Base Styles */
+/* Reset */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+
+/* Max width container */
+header,
+.grid,
+footer {
+    max-width: var(--max-width-main);
+    margin: 0 auto;
 }
 
 /* Navigation Bar */
@@ -37,14 +44,17 @@ nav {
     background-color: var(--color-darkblue);
     padding: var(--padding-small);
     display: flex;
-    justify-content: center;
-    gap: var(--padding-small);
+    justify-content: space-evenly;
+    align-items: center;
 }
 
 nav a {
-    color: var(--color-white);
+    display: block;
+    padding: 0.5rem;
     text-decoration: none;
-    padding: var(--padding-small) var(--padding-medium);
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: #fff;
     border-radius: var(--border-radius-small);
     transition: background-color 0.3s ease, color 0.3s ease;
 }
@@ -59,6 +69,8 @@ h1 {
     color: var(--color-darkblue);
     text-align: center;
     margin: var(--padding-large) 0;
+    border-bottom: 2px solid var(--color-darkgray);
+    padding-bottom: var(--padding-small);
 }
 
 /* Main Image */
@@ -79,8 +91,18 @@ p {
     margin-bottom: var(--padding-medium);
 }
 
-/* Aside Section */
+/* Grid Layout */
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    gap: var(--padding-large);
+    align-items: start;
+}
+
+/* Aside in Grid */
 aside {
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
     width: 20rem;
     margin: var(--padding-large) auto;
     border: 1px solid rgba(0, 0, 0, 0.2);
@@ -91,6 +113,7 @@ aside {
     position: relative;
 }
 
+/* Aside Header */
 aside h2 {
     position: absolute;
     top: 16px;
@@ -123,14 +146,14 @@ footer {
     color: var(--color-darkgray);
 }
 
-/* Main Section */
+/* Main Section in Grid */
 main {
-    max-width: var(--max-width-main);
-    margin: 0 auto;
+    grid-column: 2 / 3;
+    margin: 1rem;
     padding: var(--padding-medium);
 }
 
-/* Box Utility Class */
+/* Box Utility */
 .box {
     margin: var(--padding-large);
     border: 1px solid rgba(0, 0, 0, 0.1);
@@ -139,7 +162,7 @@ main {
     color: var(--color-darkgray);
 }
 
-/* Responsive Adjustments */
+/* Responsive */
 @media (max-width: 600px) {
     nav {
         flex-direction: column;
@@ -155,5 +178,15 @@ main {
     aside {
         width: auto;
         margin: var(--padding-medium);
+    }
+
+    .grid {
+        grid-template-columns: 1fr;
+    }
+
+    aside,
+    main {
+        grid-column: auto;
+        grid-row: auto;
     }
 }
