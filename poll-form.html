@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>WDD 130 | HTML Form – Encuesta de Usuario</title>
+    <link rel="stylesheet" href="styles/poll-form.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&family=Roboto:wght@400;700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <h1>WDD 130 | Franco Almada | HTML Form – Encuesta de Usuario</h1>
+    </header>
+
+    <main>
+        <form>
+            <!-- Información de Contacto -->
+            <fieldset>
+                <legend>Información de Contacto</legend>
+
+                <div class="form-item column2">
+                    <label for="fullname">Nombre completo:</label>
+                    <input type="text" id="fullname" name="fullname" required>
+                </div>
+
+                <div class="form-item column2">
+                    <label for="useremail">Correo electrónico:</label>
+                    <input type="email" id="useremail" name="useremail" required>
+                </div>
+            </fieldset>
+
+            <!-- Preguntas de la Encuesta -->
+            <fieldset>
+                <legend>Preguntas</legend>
+
+                <div class="form-item column1">
+                    <label for="social">¿Cuál es tu red social favorita?</label>
+                    <select id="social" name="social">
+                        <option value="instagram">Instagram</option>
+                        <option value="tiktok">TikTok</option>
+                        <option value="facebook">Facebook</option>
+                        <option value="x">X (Twitter)</option>
+                        <option value="otra">Otra</option>
+                    </select>
+                </div>
+
+                <div class="form-item column1">
+                    <label for="computer">¿Usas computadora todos los días?</label>
+                    <input type="checkbox" id="computer" name="computer">
+                </div>
+
+                <label for="experience">Describe tu experiencia con tecnología:</label>
+                <textarea id="experience" name="experience" rows="4"
+                    placeholder="Comencé usando computadoras en la escuela..."></textarea>
+            </fieldset>
+
+            <button type="submit">Finalizar Encuesta</button>
+        </form>
+    </main>
+
+    <footer>
+        <p>©2025 | HTML Form – Encuesta de Usuario | Franco Almada</p>
+    </footer>
+</body>
+
+</html>
