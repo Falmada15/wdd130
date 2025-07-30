@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>WDD 130 | HTML Form – Encuesta de Usuario</title>
+    <title>WDD 130 | HTML Form – User Survey</title>
     <link rel="stylesheet" href="styles/poll-form.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -15,57 +15,57 @@
 
 <body>
     <header>
-        <h1>WDD 130 | Franco Almada | HTML Form – Encuesta de Usuario</h1>
+        <h1>WDD 130 | Franco Almada | HTML Form – User Survey</h1>
     </header>
 
     <main>
         <form>
-            <!-- Información de Contacto -->
+            <!-- Contact Information -->
             <fieldset>
-                <legend>Información de Contacto</legend>
+                <legend>Contact Information</legend>
 
                 <div class="form-item column2">
-                    <label for="fullname">Nombre completo:</label>
+                    <label for="fullname">Full Name:</label>
                     <input type="text" id="fullname" name="fullname" required>
                 </div>
 
                 <div class="form-item column2">
-                    <label for="useremail">Correo electrónico:</label>
+                    <label for="useremail">Email:</label>
                     <input type="email" id="useremail" name="useremail" required>
                 </div>
             </fieldset>
 
-            <!-- Preguntas de la Encuesta -->
+            <!-- Survey Questions -->
             <fieldset>
-                <legend>Preguntas</legend>
+                <legend>Questions</legend>
 
                 <div class="form-item column1">
-                    <label for="social">¿Cuál es tu red social favorita?</label>
+                    <label for="social">What is your favorite social media platform?</label>
                     <select id="social" name="social">
                         <option value="instagram">Instagram</option>
                         <option value="tiktok">TikTok</option>
                         <option value="facebook">Facebook</option>
                         <option value="x">X (Twitter)</option>
-                        <option value="otra">Otra</option>
+                        <option value="other">Other</option>
                     </select>
                 </div>
 
                 <div class="form-item column1">
-                    <label for="computer">¿Usas computadora todos los días?</label>
+                    <label for="computer">Do you use a computer every day?</label>
                     <input type="checkbox" id="computer" name="computer">
                 </div>
 
-                <label for="experience">Describe tu experiencia con tecnología:</label>
+                <label for="experience">Describe your experience with technology:</label>
                 <textarea id="experience" name="experience" rows="4"
-                    placeholder="Comencé usando computadoras en la escuela..."></textarea>
+                    placeholder="I started using computers at school..."></textarea>
             </fieldset>
 
-            <button type="submit">Finalizar Encuesta</button>
+            <button type="submit">Submit Survey</button>
         </form>
     </main>
 
     <footer>
-        <p>©2025 | HTML Form – Encuesta de Usuario | Franco Almada</p>
+        <p>©2025 | HTML Form – User Survey | Franco Almada</p>
     </footer>
 </body>
 
