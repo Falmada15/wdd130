@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HTML & CSS Quiz</title>
+    <link rel="stylesheet" href="styles/quiz.css" />
+</head>
+
+<body>
+    <main>
+        <form>
+            <h1>📝 HTML & CSS Knowledge Check</h1>
+
+            <!-- Question 1 -->
+            <label for="q1"><strong>1.</strong> What tag is used to define the largest heading in HTML?</label>
+            <input type="text" id="q1" name="q1" required />
+
+            <!-- Question 2 -->
+            <label for="q2"><strong>2.</strong> Explain the difference between classes and IDs in CSS.</label>
+            <textarea id="q2" name="q2" rows="4" required></textarea>
+
+            <!-- Question 3 -->
+            <label for="q3"><strong>3.</strong> Which of the following is a valid way to select an ID in CSS?</label>
+            <select id="q3" name="q3" required>
+                <option value="" selected disabled>Choose one...</option>
+                <option value="a">.myId</option>
+                <option value="b">#myId</option>
+                <option value="c">/myId</option>
+            </select>
+
+            <!-- Question 4 -->
+            <label for="q4"><strong>4.</strong> What is the **top padding** value in this CSS rule?</label>
+            <pre><code>padding: 20px 15px 10px 5px;</code></pre>
+            <input type="number" id="q4" name="q4" required />
+
+            <button type="submit">Submit Quiz</button>
+        </form>
+    </main>
+</body>
+
+</html>
