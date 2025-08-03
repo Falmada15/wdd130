@@ -301,7 +301,7 @@ footer p {
 
 .team {
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     gap: 2rem;
     justify-content: center;
     text-align: center;
@@ -309,6 +309,7 @@ footer p {
 
 .team figure {
     width: 180px;
+    flex-shrink: 0;
 }
 
 .team img {
