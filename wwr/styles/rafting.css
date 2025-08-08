@@ -1,3 +1,6 @@
+/* ===========================
+   VARIABLES Y RESET GLOBAL
+=========================== */
 :root {
     --primary-color: #055a05;
     --secondary-color: #f4a261;
@@ -19,6 +22,9 @@ body {
     background-color: #fff;
 }
 
+/* ===========================
+   CONTENEDORES GENERALES
+=========================== */
 header,
 main,
 footer {
@@ -27,7 +33,9 @@ footer {
     padding: 0 16px;
 }
 
-/* HEADER */
+/* ===========================
+   HEADER Y NAVEGACIÓN
+=========================== */
 .header-container {
     display: grid;
     grid-template-columns: auto 1fr auto;
@@ -48,7 +56,6 @@ footer {
     justify-self: start;
 }
 
-/* NAVIGATION */
 nav {
     display: flex;
     gap: 24px;
@@ -70,7 +77,9 @@ nav a:focus {
     outline: none;
 }
 
-/* Hero section */
+/* ===========================
+   SECCIÓN HERO
+=========================== */
 .hero {
     position: relative;
     margin-bottom: 50px;
@@ -144,7 +153,9 @@ nav a:focus {
     object-fit: cover;
 }
 
-/* History section */
+/* ===========================
+   SECCIÓN HISTORY
+=========================== */
 .history p {
     font-size: 1.1rem;
     line-height: 1.7;
@@ -152,7 +163,9 @@ nav a:focus {
     color: var(--accent1-color);
 }
 
-/* Adventure gallery */
+/* ===========================
+   GALERÍA DE AVENTURAS
+=========================== */
 .adventure .gallery {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
@@ -190,7 +203,63 @@ figcaption {
     color: var(--accent1-color);
 }
 
-/* FOOTER */
+/* ===========================
+   SECCIÓN TRIPS
+=========================== */
+.trips-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 32px;
+    margin: 40px 0;
+}
+
+.trip {
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    padding: 1rem;
+    text-align: center;
+}
+
+.trip img {
+    width: 100%;
+    border-radius: 8px;
+    margin-bottom: 12px;
+}
+
+.trips-table {
+    margin: 40px 0;
+}
+
+.trips-table table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #fff;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.trips-table th,
+.trips-table td {
+    padding: 12px 16px;
+    border-bottom: 1px solid #ddd;
+    text-align: left;
+}
+
+.trips-table th {
+    background-color: var(--accent2-color);
+    color: var(--accent1-color);
+    font-weight: bold;
+}
+
+.trips-table tr:hover {
+    background-color: #f9f9f9;
+}
+
+/* ===========================
+   FOOTER
+=========================== */
 footer {
     max-width: 840px;
     margin: 50px auto 0 auto;
@@ -202,6 +271,8 @@ footer {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    flex-wrap: wrap;
+    gap: 12px;
 }
 
 footer p {
@@ -231,7 +302,9 @@ footer p {
     outline: none;
 }
 
-/* Responsive improvements */
+/* ===========================
+   RESPONSIVE
+=========================== */
 @media (max-width: 600px) {
 
     header,
@@ -276,10 +349,21 @@ footer p {
         flex-direction: column;
         align-items: center;
     }
+
+    .trips-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .trips-table table,
+    .trips-table th,
+    .trips-table td {
+        font-size: 0.9rem;
+    }
 }
 
-/* === Contact Page Additions === */
-
+/* ===========================
+   CONTACTO
+=========================== */
 .contact-info,
 .map,
 .team,
@@ -366,4 +450,73 @@ footer p {
 
 .contact-form button:hover {
     background-color: #044404;
+}
+
+/* --- Añadidos para formulario newsletter --- */
+.newsletter {
+    background-color: #f4f4f4;
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    margin: 3rem 0;
+    text-align: center;
+}
+
+.newsletter h2 {
+    color: var(--primary-color);
+    margin-bottom: 1rem;
+}
+
+.newsletter form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+.newsletter label {
+    font-weight: 600;
+    text-align: left;
+}
+
+.newsletter input[type="text"],
+.newsletter input[type="email"] {
+    padding: 0.6rem;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 1rem;
+    font-family: var(--body-font);
+}
+
+.newsletter button {
+    background-color: var(--primary-color);
+    color: #fff;
+    border: none;
+    padding: 0.75rem;
+    font-size: 1rem;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.newsletter button:hover {
+    background-color: #044404;
+}
+
+/* --- Añadidos para botones de reserva en trips --- */
+.trip-card button {
+    margin-top: 1rem;
+    background-color: var(--secondary-color);
+    color: #fff;
+    border: none;
+    padding: 0.6rem 1.2rem;
+    font-size: 1rem;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.trip-card button:hover {
+    background-color: #e98c2b;
 }
