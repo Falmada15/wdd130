@@ -475,23 +475,16 @@ footer p {
     margin: 0 auto;
 }
 
-.newsletter label {
-    font-weight: 600;
-    text-align: left;
-}
-
-.newsletter input[type="text"],
 .newsletter input[type="email"] {
     padding: 0.6rem;
-    border: 1px solid #ccc;
-    border-radius: 6px;
     font-size: 1rem;
-    font-family: var(--body-font);
+    border-radius: 6px;
+    border: 1px solid #ccc;
 }
 
 .newsletter button {
-    background-color: var(--primary-color);
-    color: #fff;
+    background-color: var(--secondary-color);
+    color: white;
     border: none;
     padding: 0.75rem;
     font-size: 1rem;
@@ -501,15 +494,18 @@ footer p {
 }
 
 .newsletter button:hover {
-    background-color: #044404;
+    background-color: #e98c2b;
 }
 
-/* --- Añadidos para botones de reserva en trips --- */
-.trip-card button {
+/* ===========================
+   BOTONES DE RESERVA (ENLACES)
+=========================== */
+.btn-reserve {
+    display: inline-block;
     margin-top: 1rem;
     background-color: var(--secondary-color);
     color: #fff;
-    border: none;
+    text-decoration: none;
     padding: 0.6rem 1.2rem;
     font-size: 1rem;
     border-radius: 6px;
@@ -517,6 +513,8 @@ footer p {
     transition: background-color 0.3s ease;
 }
 
-.trip-card button:hover {
+.btn-reserve:hover,
+.btn-reserve:focus {
     background-color: #e98c2b;
+    outline: none;
 }
