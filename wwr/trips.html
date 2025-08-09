@@ -2,19 +2,21 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta charset="UTF-8"> <!-- Quité el / -->
+  <meta name="viewport" content="width=device-width, initial-scale=1"> <!-- Quité el / -->
   <meta name="description"
-    content="Explore our white water rafting trips, adventures, and packages with detailed information and photos." />
-  <meta name="author" content="Franco Almada" />
+    content="Explore our white water rafting trips, adventures, and packages with detailed information and photos.">
+  <!-- Quité el / -->
+  <meta name="author" content="Franco Almada"> <!-- Quité el / -->
   <title>Trips | White Water Rafting</title>
 
   <!-- Google Fonts -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://fonts.googleapis.com"> <!-- Quité el / -->
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> <!-- Quité el / -->
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Rubik&display=swap" rel="stylesheet">
+  <!-- Quité el / -->
 
-  <link rel="stylesheet" href="styles/rafting.css" />
+  <link rel="stylesheet" href="styles/rafting.css"> <!-- Quité el / -->
 </head>
 
 <body>
@@ -32,74 +34,65 @@
   </header>
 
   <main>
-    <section class="hero">
-      <img src="images/hero.jpg" alt="White water rafting adventure">
-      <h1>Our Rafting Trips</h1>
-      <p>Thrilling adventures for every skill level! <a href="contact.html">Contact us</a> to reserve your spot.</p>
+    <section class="intro">
+      <h2>Our Rafting Trips</h2>
+      <p>
+        Whether you're a thrill-seeker or a nature lover, we have the perfect trip for you! Explore below our curated
+        adventures.
+      </p>
     </section>
 
     <section class="trips-grid">
-      <article class="trip">
-        <img src="images/adventure1.jpg" alt="Peaceful Rapids trip">
-        <h2>Peaceful Rapids</h2>
-        <p>A relaxing journey down gentle rapids for beginners and families.</p>
-        <ul>
-          <li><strong>Duration:</strong> 2 hours</li>
-          <li><strong>Price:</strong> $50</li>
-        </ul>
-        <button type="button">Reserve Now</button>
-      </article>
-      <article class="trip">
-        <img src="images/adventure2.jpg" alt="Colorado River trip">
-        <h2>Colorado River Adventure</h2>
-        <p>Experience thrilling rapids and scenic views on this intermediate-level adventure.</p>
-        <ul>
-          <li><strong>Duration:</strong> 4 hours</li>
-          <li><strong>Price:</strong> $80</li>
-        </ul>
-        <button type="button">Reserve Now</button>
-      </article>
-      <article class="trip">
-        <img src="images/adventure3.jpg" alt="Bear River trip">
-        <h2>Bear River Expedition</h2>
-        <p>Challenging rapids for those seeking excitement.</p>
-        <ul>
-          <li><strong>Duration:</strong> 6 hours</li>
-          <li><strong>Price:</strong> $120</li>
-        </ul>
-        <button type="button">Reserve Now</button>
-      </article>
+      <h2>Featured Adventures</h2>
+      <div class="trip">
+        <img src="images/trip1.jpg" alt="Rafting adventure 1">
+        <h3>Rapid Rush</h3>
+        <p>A half-day adventure perfect for beginners who want a taste of the rapids!</p>
+        <button>Reserve Now</button>
+      </div>
+      <div class="trip">
+        <img src="images/trip2.jpg" alt="Rafting adventure 2">
+        <h3>White Water Extreme</h3>
+        <p>Our most popular full-day trip for adventure seekers. Includes lunch and gear.</p>
+        <button>Reserve Now</button>
+      </div>
+      <div class="trip">
+        <img src="images/trip3.jpg" alt="Rafting adventure 3">
+        <h3>Family Float</h3>
+        <p>A scenic and calm experience suitable for families with young children.</p>
+        <button>Reserve Now</button>
+      </div>
     </section>
 
     <section class="trips-table">
-      <h2>Trip Details</h2>
+      <h2>Trip Comparison</h2>
       <table>
         <thead>
           <tr>
-            <th scope="col">Trip Name</th>
-            <th scope="col">Duration</th>
-            <th scope="col">Difficulty</th>
-            <th scope="col">Price</th>
+            <th>Trip Name</th>
+            <th>Duration</th>
+            <th>Difficulty</th>
+            <th>Price</th>
           </tr>
         </thead>
         <tbody>
           <tr>
-            <td>Peaceful Rapids</td>
-            <td>2 hours</td>
-            <td>Easy</td>
-            <td>$50</td>
-          </tr>
-          <tr>
-            <td>Colorado River Adventure</td>
+            <td>Rapid Rush</td>
             <td>4 hours</td>
-            <td>Intermediate</td>
+            <td>Beginner</td>
             <td>$80</td>
           </tr>
           <tr>
-            <td>Bear River Expedition</td>
-            <td>6 hours</td>
+            <td>White Water Extreme</td>
+            <td>8 hours</td>
             <td>Advanced</td>
-            <td>$120</td>
+            <td>$150</td>
+          </tr>
+          <tr>
+            <td>Family Float</td>
+            <td>3 hours</td>
+            <td>Easy</td>
+            <td>$60</td>
           </tr>
         </tbody>
       </table>
@@ -109,9 +102,15 @@
   <footer>
     <p>&copy; 2025 ⚓ White Water Rafting ⚓ Franco Almada</p>
     <nav class="socialmedia" aria-label="Social Media Links">
-      <a href="https://facebook.com"><img src="images/facebook-icon.webp" alt="Facebook icon"></a>
-      <a href="https://instagram.com"><img src="images/instagram-icon.png" alt="Instagram icon"></a>
-      <a href="https://wa.me/1234567890"><img src="images/whatsapp-icon.png" alt="WhatsApp icon"></a>
+      <a href="https://facebook.com" aria-label="Facebook">
+        <img src="images/facebook-icon.webp" alt="Facebook icon">
+      </a>
+      <a href="https://instagram.com" aria-label="Instagram">
+        <img src="images/instagram-icon.png" alt="Instagram icon">
+      </a>
+      <a href="https://wa.me/1234567890" aria-label="WhatsApp">
+        <img src="images/whatsapp-icon.png" alt="WhatsApp icon">
+      </a>
     </nav>
     <p><a href="images/trips-wireframe.png" target="_blank">View Trips Page Wireframe</a></p>
   </footer>
